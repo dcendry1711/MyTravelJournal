@@ -7,7 +7,7 @@ export function Note(props){
             <div className="information-section">
                 <div className="note-location">
                     <div className="marker-section">
-                        <img src="public/marker.png"/>
+                        <img src="./public/marker.png"/>
                         <p className="country-name">{props.country}</p>
                     </div>
                     <a href={props.googleMapsLink}>View on Google Maps</a>
