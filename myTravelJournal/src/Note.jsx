@@ -1,22 +1,21 @@
-export function Note(){
+export function Note(props){
     return(
         <article>
             <div className="image-section">
-                <img className="location-image" src="/public/Rectangle 77.png"/>
+                <img className="location-image" src={props.img.src} alt={props.img.alt}/>
             </div>
             <div className="information-section">
                 <div className="note-location">
                     <div className="marker-section">
                         <img src="public/marker.png"/>
-                        <p>JAPAN</p>
+                        <p className="country-name">{props.country}</p>
                     </div>
-                    <a href="#">View on Google Maps</a>
+                    <a href={props.googleMapsLink}>View on Google Maps</a>
                 </div>
-                <h1 className="location-title">Mount Fuji</h1>
-                <h3 className="dates">12 Jan, 2023 - 24 Jan, 2023</h3>
+                <h1 className="location-title">{props.title}</h1>
+                <h3 className="dates">{props.dates}</h3>
                 <p className="location-text">
-                    Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters (12,380 feet). 
-                    Mount Fuji is the single most popular tourist site in Japan, for both Japanese and foreign tourists.
+                    {props.text}
                 </p>
             </div>
         </article>
