@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  display: flex;
+}
+
+body {
+  width: 100%;
+}
+
+header {
+  gap: 1em;
+  background: #F55A5A;
+  color: #FFFF;
+  padding: 1em 0;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin: 1em auto;
+  width: 40%;
+}
+
+.location-image {
+  height: 25vh;
+}
+
+.information-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.note-location {
+  display: flex;
+  align-items: center; 
+  gap: 1.5em;
+}
+
+.marker-section {
+  display: flex;
+  gap: .2em;
+  align-items: center;
+}
+
+.location-title {
+  margin: .7em 0;
+}
+
+.location-text {
+  line-height: 1.5;
+  width: 80%;
+}
+
+.dates {
+  margin-bottom: .5em;
+}
+
+
+
+
+
