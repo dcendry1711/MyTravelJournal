@@ -1,5 +1,6 @@
 export function Note(props){
     return(
+        <>
         <article>
             <div className="image-section">
                 <img className="location-image" src={props.img.src} alt={props.img.alt}/>
@@ -19,5 +20,7 @@ export function Note(props){
                 </p>
             </div>
         </article>
+        <hr />
+        </>
     )
 }

@@ -31,17 +31,23 @@ article {
 }
 
 .location-image {
-  width: 20vw;
-  height: 25vh;
   border-radius: 7px;
+  height: 25vh;
 }
 
 a:hover {
   opacity: .5;
 }
 
+.image-section {
+  display: flex;
+  width: 60vw;
+  justify-content: left;
+  margin-right: -3.1em;
+}
+
 .information-section {
-  width: 50%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,6 +83,30 @@ a:hover {
   letter-spacing: 1px;
 }
 
+/*MEDIA QUERY -> MOBILE VERSION*/
+
+
+@media (max-width:550px){
+  header {
+    padding: .7em 0;
+    font-size: .7rem;
+  }
+  .logo {
+    width: 11vw;
+  }
+  article {
+    align-items: center;
+    width: 99%;
+    padding: .5em ;
+  }
+  .location-image {
+    width: 70%;
+    border-radius: 7px;
+  }
+  .information-section {
+    width: 90%;
+  }
+}
 
 
 
